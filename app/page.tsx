@@ -9,7 +9,7 @@ import Gallery from "./components/Gallery";
 import Newsletter from "./components/Newsletter/Newsletter";
 
 export const metadata: Metadata = {
-  title: "Home | Next.js + TypeScript Example",
+  title: "Dumplings Kitchen",
 };
 
 export default function IndexPage(): JSX.Element {

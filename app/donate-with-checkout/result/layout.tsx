@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fade } from "react-awesome-reveal";
 
 export const metadata: Metadata = {
-  title: "Checkout Session Result",
+  title: "Payment Status",
 };
 
 export default function ResultLayout({
