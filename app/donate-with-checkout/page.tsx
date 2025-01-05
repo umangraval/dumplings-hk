@@ -7,10 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function DonatePage(): JSX.Element {
-  return (
-    <div className="page-container">
-      <h1>Donate</h1>
-      <CheckoutForm uiMode="hosted" />
-    </div>
-  );
+  return <CheckoutForm uiMode="hosted" />;
 }

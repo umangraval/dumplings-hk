@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 
 import Link from "next/link";
+import Banner from "./components/Banner";
+import Cook from "./components/Cook";
+import Features from "./components/Work/index";
+import Expert from "./components/Expert";
+import Gallery from "./components/Gallery";
+import Newsletter from "./components/Newsletter/Newsletter";
 
 export const metadata: Metadata = {
   title: "Home | Next.js + TypeScript Example",
@@ -8,17 +14,12 @@ export const metadata: Metadata = {
 
 export default function IndexPage(): JSX.Element {
   return (
-    <ul className="card-list">
-      <li>
-        <Link
-          href="/donate-with-checkout"
-          className="card checkout-style-background"
-        >
-          <h2 className="bottom">Donate with hosted Checkout</h2>
-          <img src="/checkout-one-time-payments.svg" />
-        </Link>
-      </li>
-    
-    </ul>
+    <main>
+      <Banner />
+      <Features />
+      <Cook />
+      <Expert />
+      <Gallery />
+    </main>
   );
 }

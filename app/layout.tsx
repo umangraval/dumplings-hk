@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-import Link from "next/link";
-
-import "../styles.css";
+import "../globals.css";
+import Navbar from "./components/Navbar/index";
+import Footer from "./components/Footer/Footer";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,25 +10,18 @@ interface LayoutProps {
 
 export const metadata: Metadata = {
   title: {
-    default: "TypeScript Next.js Stripe Example",
-    template: "%s | Next.js + TypeScript Example",
-  }
+    default: "Dumpling Kitchen",
+    template: "Dumpling Kitchen",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body>
-        <div className="container">
-          <header>
-            <div className="header-content">
-              <h1>
-                <span className="light">Dumplings</span>
-              </h1>
-            </div>
-          </header>
-          {children}
-        </div>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );
